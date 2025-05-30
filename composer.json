@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.4.0 <8.0.0",
-        "guzzlehttp/guzzle": "^6.5.0",
+        "guzzlehttp/guzzle": "^7.9.2",
         "guzzlehttp/psr7": "^1.8.0",
         "psr/http-client": "^1.0.0",
         "psr/http-message": "^1.0.0"
