@@ -1,0 +1,49 @@
+{
+    "name": "xzq-chat/tp5-client",
+    "description": "OpenAI PHP SDK for ThinkPHP 5",
+    "keywords": ["php", "openai", "sdk", "thinkphp", "GPT-3", "DALL-E", "api", "client"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xzq",
+            "email": "runundersun@163.com",
+            "homepage": "https://github.com/xuzhengqiang/xzq-chat-tp5-client.git",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0 <8.0.0",
+        "topthink/framework": "^5.0.0",
+        "guzzlehttp/guzzle": "^6.5.0",
+        "guzzlehttp/psr7": "^1.8.0",
+        "psr/http-client": "^1.0.0",
+        "psr/http-message": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5.0",
+        "mockery/mockery": "^1.3.0",
+        "symfony/var-dumper": "^4.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenAI\\": "src/"
+        },
+        "files": [
+            "src/OpenAI.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+} 
