@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": ">=7.4.0 <8.0.0",
-        "topthink/framework": "^5.0.0",
         "guzzlehttp/guzzle": "^6.5.0",
         "guzzlehttp/psr7": "^1.8.0",
         "psr/http-client": "^1.0.0",
