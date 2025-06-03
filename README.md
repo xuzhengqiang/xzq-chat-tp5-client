@@ -1,6 +1,6 @@
-# OpenAI PHP SDK for ThinkPHP 5
+# XZQ Chat SDK for ThinkPHP 5
 
-这是一个基于PHP 7.4的OpenAI SDK，专门为ThinkPHP 5框架优化。
+这是一个基于PHP 7.4的Chat SDK，专门为ThinkPHP 5框架优化。
 
 ## 安装
 
@@ -10,10 +10,10 @@ composer require xzq-chat/tp5-client
 
 ## 配置
 
-在ThinkPHP 5的配置文件中添加OpenAI配置：
+在ThinkPHP 5的配置文件中添加Chat配置：
 
 ```php
-// config/openai.php
+// config/chat.php
 return [
     'api_key' => 'your-api-key',
     'organization' => 'your-organization-id', // 可选
@@ -27,12 +27,12 @@ return [
 ### 初始化
 
 ```php
-use OpenAI\Client;
+use xzq\chat\Client;
 
 // 在控制器中使用
 public function index()
 {
-    $client = new Client(config('openai'));
+    $client = new Client(config('chat'));
 }
 ```
 
@@ -141,7 +141,7 @@ $response = $client->files()->upload([
 
 - 完全兼容PHP 7.4
 - 专为ThinkPHP 5优化
-- 支持所有OpenAI API功能
+- 支持所有Chat API功能
 - 支持流式响应
 - 支持音频处理
 - 支持文件上传和管理
@@ -153,7 +153,7 @@ $response = $client->files()->upload([
 
 1. 确保PHP版本 >= 7.4
 2. 需要安装ThinkPHP 5框架
-3. 需要有效的OpenAI API密钥
+3. 需要有效的Chat API密钥
 4. 流式响应需要PHP支持生成器（Generator）
 5. 文件上传时注意文件大小限制和类型限制
 
@@ -162,9 +162,9 @@ $response = $client->files()->upload([
 ```php
 try {
     $response = $client->completions()->create([...]);
-} catch (\OpenAI\Exceptions\ApiException $e) {
+} catch (\xzq\chat\Exceptions\ApiException $e) {
     // 处理API错误
-    Log::error('OpenAI API Error: ' . $e->getMessage());
+    Log::error('Chat API Error: ' . $e->getMessage());
 } catch (\Exception $e) {
     // 处理其他错误
     Log::error('Error: ' . $e->getMessage());

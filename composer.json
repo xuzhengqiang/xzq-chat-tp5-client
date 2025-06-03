@@ -1,7 +1,7 @@
 {
     "name": "xzq-chat/tp5-client",
-    "description": "OpenAI PHP SDK for ThinkPHP 5",
-    "keywords": ["php", "openai", "sdk", "thinkphp", "GPT-3", "DALL-E", "api", "client"],
+    "description": "Chat SDK for ThinkPHP 5",
+    "keywords": ["php", "chat", "sdk", "thinkphp", "GPT-3", "DALL-E", "api", "client"],
     "license": "MIT",
     "authors": [
         {

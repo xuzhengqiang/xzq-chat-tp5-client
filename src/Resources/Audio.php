@@ -3,8 +3,8 @@
 namespace xzq\chat\Resources;
 
 use GuzzleHttp\Client;
-use OpenAI\Responses\StreamResponse;
-use OpenAI\Resources\Concerns\FileUpload;
+use xzq\chat\Responses\StreamResponse;
+use xzq\chat\Resources\Concerns\FileUpload;
 
 class Audio
 {

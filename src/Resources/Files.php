@@ -3,7 +3,7 @@
 namespace xzq\chat\Resources;
 
 use GuzzleHttp\Client;
-use OpenAI\Resources\Concerns\FileUpload;
+use xzq\chat\Resources\Concerns\FileUpload;
 
 class Files
 {

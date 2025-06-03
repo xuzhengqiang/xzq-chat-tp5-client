@@ -85,7 +85,7 @@ class Client
     }
 
     /**
-     * 发送请求到OpenAI API
+     * 发送请求到Chat API
      *
      * @param string $method HTTP方法
      * @param string $uri 请求URI
@@ -104,7 +104,7 @@ class Client
     }
 
     /**
-     * 发送流式请求到OpenAI API
+     * 发送流式请求到Chat API
      *
      * @param string $method HTTP方法
      * @param string $uri 请求URI

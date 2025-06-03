@@ -5,6 +5,7 @@ namespace xzq\chat\Responses;
 use Generator;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
+use xzq\chat\Exceptions\ApiException;
 
 class StreamResponse implements \IteratorAggregate
 {
@@ -39,7 +40,7 @@ class StreamResponse implements \IteratorAggregate
             $response = json_decode($data, true);
 
             if (isset($response['error'])) {
-                throw new \OpenAI\Exceptions\ApiException($response['error']['message'], $response['error']['code'] ?? 0);
+                throw new ApiException($response['error']['message'], $response['error']['code'] ?? 0);
             }
 
             if (isset($response['type']) && $response['type'] === 'ping') {
