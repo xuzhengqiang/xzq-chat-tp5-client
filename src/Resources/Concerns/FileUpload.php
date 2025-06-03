@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Resources\Concerns;
+namespace xzq\\chat\\Resources\Concerns;
 
 trait FileUpload
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Exceptions;
+namespace xzq\chat\Exceptions;
 
 use Exception;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenAI\Resources;
+namespace xzq\chat\Resources;
 
 use GuzzleHttp\Client;
-use OpenAI\Responses\StreamResponse;
+use xzq\chat\Responses\StreamResponse;
 
 class Chat
 {

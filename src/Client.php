@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenAI;
+namespace xzq\chat;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\GuzzleException;
-use OpenAI\Exceptions\ApiException;
-use OpenAI\Resources\Completions;
-use OpenAI\Resources\Images;
-use OpenAI\Resources\Chat;
-use OpenAI\Resources\Embeddings;
-use OpenAI\Resources\Audio;
-use OpenAI\Resources\Files;
+use xzq\chat\Exceptions\ApiException;
+use xzq\chat\Resources\Completions;
+use xzq\chat\Resources\Images;
+use xzq\chat\Resources\Chat;
+use xzq\chat\Resources\Embeddings;
+use xzq\chat\Resources\Audio;
+use xzq\chat\Resources\Files;
 use Psr\Http\Message\ResponseInterface;
 
 class Client

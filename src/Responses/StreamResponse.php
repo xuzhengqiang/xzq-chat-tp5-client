@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenAI\Responses;
+namespace xzq\chat\Responses;
 
 use Generator;
 use Psr\Http\Message\ResponseInterface;

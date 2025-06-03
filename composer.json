@@ -25,11 +25,8 @@
     },
     "autoload": {
         "psr-4": {
-            "OpenAI\\": "src/"
-        },
-        "files": [
-            "src/OpenAI.php"
-        ]
+            "xzq\\chat\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {

@@ -1,8 +1,9 @@
 <?php
 
-namespace OpenAI\Resources;
+namespace xzq\chat\Resources;
 
 use GuzzleHttp\Client;
+use xzq\chat\Responses\StreamResponse;
 
 class Completions
 {
